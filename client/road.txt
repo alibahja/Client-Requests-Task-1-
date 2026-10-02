@@ -1,0 +1,51 @@
+client/
+├── src/
+│   ├── api/
+│   │   ├── axios.ts              # axios instance + interceptors
+│   │   ├── auth.api.ts
+│   │   └── requests.api.ts
+│   │
+│   ├── components/
+│   │   ├── common/
+│   │   │   ├── Button.tsx
+│   │   │   ├── Input.tsx
+│   │   │   ├── Modal.tsx
+│   │   │   └── Spinner.tsx
+│   │   ├── layout/
+│   │   │   ├── Navbar.tsx
+│   │   │   └── ProtectedRoute.tsx
+│   │   ├── requests/
+│   │   │   ├── RequestsTable.tsx
+│   │   │   ├── RequestRow.tsx
+│   │   │   ├── StatusBadge.tsx
+│   │   │   ├── StatusDropdown.tsx
+│   │   │   └── CreateRequestModal.tsx   # your "+ New Request"
+│   │   └── auth/
+│   │       ├── LoginForm.tsx
+│   │       └── RegisterForm.tsx
+│   │
+│   ├── pages/
+│   │   ├── LoginPage.tsx
+│   │   ├── RegisterPage.tsx
+│   │   └── DashboardPage.tsx
+│   │
+│   ├── hooks/
+│   │   ├── useAuth.ts            # or use a context
+│   │   └── useRequests.ts        # encapsulate fetch + mutate
+│   │
+│   ├── context/
+│   │   └── AuthContext.tsx       # token + user, persisted to localStorage
+│   │
+│   ├── types/
+│   │   └── index.ts              # shared TS types (Request, User, Status)
+│   │
+│   ├── utils/
+│   │   └── format.ts
+│   │
+│   ├── App.tsx                   # routes
+│   ├── main.tsx
+│   └── index.css
+│
+├── .env.example                  # VITE_API_URL
+├── tsconfig.json
+└── package.json
