@@ -4,9 +4,6 @@ An internal dashboard for tracking client requests through a simple status pipel
 
 Full-stack TypeScript: React frontend, Express and MongoDB backend.
 
-| Login | Dashboard |
-| --- | --- |
-| ![Login](docs/screenshots/login.png) | ![Dashboard](docs/screenshots/dashboard.png) |
 
 ## Tech Stack
 
